@@ -9,11 +9,11 @@ import retrofit2.http.Path;
 
 public interface Api {
 
-    String URL = "http://10.0.2.2:8080/";
+    String URL = "http://192.168.1.44:8080/dsaApp/";
 
-    @GET("/user/{userId}")
+    @GET("/user/{username}")
     Call<User> getUser(
-            @Path("userId") int userId);
+            @Path("username") String username);
 
     @GET("/badges")
     Call<List<Badge>> getBadges();

@@ -68,7 +68,7 @@ public class InitialPage extends AppCompatActivity {
 
     private void doApiCallPerfil() {
         Api apiService = Api.retrofit.create(Api.class);
-        Call<User> call = apiService.getUser(1);
+        Call<User> call = apiService.getUser("arnauem");
 
         call.enqueue(new Callback<User>() {
             @Override

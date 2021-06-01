@@ -108,7 +108,7 @@ public class PerfilActivity extends AppCompatActivity {
 
     private void doApiCall(final SwipeRefreshLayout mySwipeRefreshLayout) {
         Api apiService = Api.retrofit.create(Api.class);
-        Call<User> call = apiService.getUser(1);
+        Call<User> call = apiService.getUser("arnauem");
 
         call.enqueue(new Callback<User>() {
             @Override
