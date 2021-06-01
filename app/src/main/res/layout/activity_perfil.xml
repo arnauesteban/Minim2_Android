@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- A RecyclerView with some commonly used attributes -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/my_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="386dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:elevation="2dp"
+        android:src="@android:drawable/ic_menu_add" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_swipe_refresh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="89dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="118dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/my_swipe_refresh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-98dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/username" />
+
+    <TextView
+        android:id="@+id/fullNameTv"
+        android:layout_width="126dp"
+        android:layout_height="31dp"
+        android:layout_above="@+id/my_swipe_refresh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/full_name" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_swipe_refresh"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/button_insignias"
+        android:textSize="24sp" />
+
+</RelativeLayout>
